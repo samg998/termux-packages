@@ -1,9 +1,9 @@
 TERMUX_PKG_HOMEPAGE=https://nodejs.org/
 TERMUX_PKG_DESCRIPTION="Platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications"
 TERMUX_PKG_LICENSE="MIT"
-TERMUX_PKG_VERSION=13.0.0
+TERMUX_PKG_VERSION=13.2.0
 TERMUX_PKG_SRCURL=https://nodejs.org/dist/v${TERMUX_PKG_VERSION}/node-v${TERMUX_PKG_VERSION}.tar.xz
-TERMUX_PKG_SHA256=45ff3b40afc3fc93fd62e31c0f5dfa046f307f0b33d0f32e09019f306bc74767
+TERMUX_PKG_SHA256=1deec7df3e7a9684f11b1069824cccf9baeecd139a1dbf6a83d29e732d5f0b64
 # Note that we do not use a shared libuv to avoid an issue with the Android
 # linker, which does not use symbols of linked shared libraries when resolving
 # symbols on dlopen(). See https://github.com/termux/termux-packages/issues/462.
@@ -71,8 +71,6 @@ termux_step_configure() {
 		--shared-openssl \
 		--shared-zlib \
 		--with-intl=system-icu \
-		--without-snapshot \
-		--without-node-snapshot \
 		--cross-compiling
 
 	export LD_LIBRARY_PATH=$TERMUX_PKG_HOSTBUILD_DIR/icu-installed/lib

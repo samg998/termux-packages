@@ -1,7 +1,7 @@
-diff -u -r ../node-v12.9.0/node.gyp ./node.gyp
---- ../node-v12.9.0/node.gyp	2019-08-20 17:14:52.000000000 +0000
-+++ ./node.gyp	2019-08-24 20:21:21.471982543 +0000
-@@ -1062,107 +1062,6 @@
+diff -u -r ../node-v13.2.0/node.gyp ./node.gyp
+--- ../node-v13.2.0/node.gyp	2019-11-21 21:14:03.000000000 +0000
++++ ./node.gyp	2019-11-27 20:33:04.857785798 +0000
+@@ -1064,108 +1064,6 @@
          } ],
        ]
      }, # specialize_node_d
@@ -41,6 +41,7 @@ diff -u -r ../node-v12.9.0/node.gyp ./node.gyp
 -        'test/cctest/node_test_fixture.h',
 -        'test/cctest/test_aliased_buffer.cc',
 -        'test/cctest/test_base64.cc',
+-        'test/cctest/test_base_object_ptr.cc',
 -        'test/cctest/test_node_postmortem_metadata.cc',
 -        'test/cctest/test_environment.cc',
 -        'test/cctest/test_linked_binding.cc',
